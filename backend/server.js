@@ -9,7 +9,6 @@ app.get('/api/products', (req, res) => {
 
 app.get('/api/products/slug/:slug', (req, res) => {
   const product = data.products.find((product) => product.slug === req.params.slug);
-  console.log(req.params);
 
   if (product) {
     res.send(product);
