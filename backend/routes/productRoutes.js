@@ -13,7 +13,7 @@ productRouter.get('/slug/:slug', async (req, res) => {
 
   if (product) {
     res.send(product);
-  } else {   
+  } else {
     res.status(404).send({ message: 'Product not found' });
   }
 });
